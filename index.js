@@ -11,4 +11,4 @@ app.use(FileUpload());
 app.use(express.static('public'));
 app.use(ProductRoute);
 
-app.listen(3000, () => console.log('Server Jalan'));
+app.listen(process.env.PORT || 3000, () => console.log('Server berjalan di port ' + (process.env.PORT || 3000)));
